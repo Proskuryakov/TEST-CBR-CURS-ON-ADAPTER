@@ -1,1 +1,4 @@
-
+cbr:
+  uri: 'http://www.cbr.ru/DailyInfoWebServ/DailyInfo.asmx'
+  wsdl:
+    GenerationPackage: 'ru.proskuryakov.testcbrcursondateadapter.cbr.wsdl'
