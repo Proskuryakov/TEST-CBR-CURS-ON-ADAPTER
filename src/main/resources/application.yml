@@ -1,4 +1,10 @@
+server:
+  port: 0
+
 cbr:
   uri: 'http://www.cbr.ru/DailyInfoWebServ/DailyInfo.asmx'
   wsdl:
     GenerationPackage: 'ru.proskuryakov.testcbrcursondateadapter.cbr.wsdl'
+
+adapter:
+  uri: 'http://localhost:8080'
