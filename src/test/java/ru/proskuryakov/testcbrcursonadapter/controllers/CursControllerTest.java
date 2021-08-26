@@ -154,4 +154,30 @@ public class CursControllerTest {
         assertThat(loggingMessage.getAction(), Matchers.equalTo("getCursByDates"));
     }
 
+    @Test
+    public void test_0007() {
+        String code = "DOLLAR";
+
+        given().log().body().contentType("application/json")
+                .when()
+                .get(url + "/curs/" + code)
+                .then()
+                .log()
+                .body()
+                .statusCode(400);
+    }
+
+    @Test
+    public void test_0008() {
+        String code = "USD";
+        String strDate = "17.01.2001";
+
+        given().when()
+                .get(url + "/curs/" + code + "/date/" + strDate)
+                .then()
+                .log()
+                .body()
+                .statusCode(400);
+    }
+
 }
