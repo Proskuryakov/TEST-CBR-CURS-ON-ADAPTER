@@ -8,3 +8,14 @@ cbr:
 
 adapter:
   uri: 'http://localhost:8080'
+
+rabbitmq:
+  exchange:
+    history: change-history-exchange
+    logging: logging-exchange
+  routingkey:
+    history: change-history-routingkey
+    logging: logging-routingkey
+  queue:
+    history: change-history-queue
+    logging: logging-queue
